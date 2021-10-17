@@ -7,7 +7,8 @@ filegroup(
 )
 
 cmake(
-  name = "libzmq",
+  name = "cppzmq",
   lib_source = ":src",
   visibility = ["//visibility:public"],
+  deps = ["@zmq//:libzmq"]
 )

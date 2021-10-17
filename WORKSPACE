@@ -22,8 +22,15 @@ load("@rules_foreign_cc//foreign_cc:repositories.bzl", "rules_foreign_cc_depende
 rules_foreign_cc_dependencies()
 
 new_git_repository(
-  name = "zeromq",
+  name = "zmq",
   remote = "https://github.com/zeromq/libzmq.git",
   tag = "v4.3.4",
   build_file = "zmq.BUILD"
+)
+
+new_git_repository(
+  name = "cppzmq",
+  remote = "https://github.com/zeromq/cppzmq.git",
+  tag = "v4.8.1",
+  build_file = "cppzmq.BUILD"
 )

@@ -2,6 +2,8 @@ cc_binary(
   name = "hello-world",
   srcs = ["main.cpp"],
   deps = [
-    "@com_google_protobuf//:protobuf"
+    "@com_google_protobuf//:protobuf",
+    "@zmq//:libzmq",
+    "@cppzmq//:cppzmq"
   ],
 )

@@ -1,6 +1,7 @@
-#include <iostream>
 
-#include <zmq.hpp>
+#include <cppzmq/zmq.hpp>
+
+#include <iostream>
 
 int main(int argc, char * argv [])
 {

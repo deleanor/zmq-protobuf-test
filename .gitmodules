@@ -1,6 +1,0 @@
-[submodule "third-party/libzmq"]
-	path = third-party/libzmq
-	url = https://github.com/zeromq/libzmq.git
-[submodule "third-party/protobuf"]
-	path = third-party/protobuf
-	url = https://github.com/protocolbuffers/protobuf.git

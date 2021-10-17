@@ -1,14 +1,5 @@
-load("@rules_foreign_cc//foreign_cc:defs.bzl", "cmake")
-
-filegroup(
-  name = "src",
-  srcs = glob(["**"]),
-  visibility = ["//visibility:public"],
-)
-
-cmake(
+cc_library(
   name = "cppzmq",
-  lib_source = ":src",
+  hdrs = ["zmq.hpp"],
   visibility = ["//visibility:public"],
-  deps = ["@zmq//:libzmq"]
 )
